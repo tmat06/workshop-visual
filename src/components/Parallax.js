@@ -17,6 +17,7 @@ export default class ParallaxExample extends Component {
         >
           {/* Text can go here */}
         </Parallax>
+
         <div
           style={{
             height: "100vh",

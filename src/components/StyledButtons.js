@@ -71,7 +71,7 @@ class StyledButtons extends Component {
                 className="form-control"
                 aria-label="Sizing example input"
                 aria-describedby="inputGroup-sizing-default"
-                placeholder="Username"
+                placeholder="Password"
               />
             </div>
             <button className="btn btn-secondary btn-lg btn-block">

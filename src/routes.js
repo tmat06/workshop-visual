@@ -4,6 +4,7 @@ import StyledButtons from "./components/StyledButtons";
 import ParallaxExample from "./components/Parallax";
 import ChartJS from "./components/Chartjs";
 import ParticlesJS from "./components/Particles";
+import TestRun from "./components/TestRun";
 
 export default (
   <Switch>
@@ -11,5 +12,6 @@ export default (
     <Route path="/parallax" component={ParallaxExample} />
     <Route path="/chart" component={ChartJS} />
     <Route path="/particles" component={ParticlesJS} />
+    <Route path="/testrun" component={TestRun} />
   </Switch>
 );

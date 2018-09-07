@@ -215,7 +215,30 @@ class SideMenu extends React.Component {
           </div>
         );
       default:
-        return <div>dog</div>;
+        return (
+          <div>
+            <h1>Bootstrap</h1>
+            <h3>import 'bootstrap/dist/css/bootstrap.min.css'</h3>
+            <h1>Material UI</h1>
+            <h3>import Button from '@material-ui/core/Button'</h3>
+            <h1>Semantic</h1>
+            <h3>import 'semantic-ui-css/semantic.min.css'</h3>
+            <h1>Parallax</h1>
+            <h3>
+              import {"{"}
+              Parallax
+              {"}"} from 'react-parallax'
+            </h3>
+            <h1>Chart.js</h1>
+            <h3>
+              import {"{"}
+              Doughnut
+              {"}"} from 'react-chartjs-2'
+            </h3>
+            <h1>Particle.js</h1>
+            <h3>import Particles from 'react-particles-js'</h3>
+          </div>
+        );
     }
   }
   render() {
@@ -240,6 +263,11 @@ class SideMenu extends React.Component {
           <Link to="/particles">
             <button class="ui button" role="button">
               Particles
+            </button>
+          </Link>
+          <Link to="/testrun">
+            <button class="ui button" role="button">
+              TestRun
             </button>
           </Link>
         </div>

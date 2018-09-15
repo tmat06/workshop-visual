@@ -23,8 +23,8 @@ export default class App extends Component {
         <Motion
           defaultStyle={{ x: 0, opacity: 0 }}
           style={{
-            x: this.state.slide ? spring(400) : spring(0),
-            opacity: this.state.slide ? spring(1) : spring(0)
+            x: this.state.slide ? spring(95) : spring(0),
+            opacity: this.state.slide ? spring(0) : spring(1)
           }}
         >
           {mot => {

@@ -1,5 +1,6 @@
 import React from "react";
 import { withRouter, Link } from "react-router-dom";
+
 import "semantic-ui-css/semantic.min.css";
 
 class SideMenu extends React.Component {
@@ -160,50 +161,66 @@ class SideMenu extends React.Component {
     return (
       <div
         id="side-menu"
-        style={{ transform: `translateX(${mot.x}px)` }}
-        onClick={() => toggleSlide()}
+        style={{
+          transform: `translateX(${mot.x}%)`,
+          opacity: mot.opacity + 0.5
+        }}
       >
-        <div
-          style={{
-            opacity: mot.opacity,
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100vh",
-            backgroundColor: "green"
-          }}
-        >
-          Dog
-        </div>
-        <div id="nav-buttons">
-          <Link to="/">
-            <button class="ui button" role="button">
-              Slick
+        {mot.opacity === 0 ? (
+          <div
+            onClick={() => toggleSlide()}
+            style={{
+              transform: `translateX(-${mot.x}px)`,
+              position: "fixed",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100vh"
+            }}
+          />
+        ) : (
+          <div
+            style={{
+              opacity: mot.opacity
+            }}
+          >
+            <button
+              class="fluid ui button"
+              role="button"
+              onClick={() => toggleSlide()}
+            >
+              Hide Menu
             </button>
-          </Link>
-          <Link to="/parallax">
-            <button class="ui button" role="button">
-              Parallax
-            </button>
-          </Link>
-          <Link to="/chart">
-            <button class="ui button" role="button">
-              Chart.js
-            </button>
-          </Link>
-          <Link to="/particles">
-            <button class="ui button" role="button">
-              Particles
-            </button>
-          </Link>
-          <Link to="/testrun">
-            <button class="ui button" role="button">
-              TestRun
-            </button>
-          </Link>
-        </div>
-        {this.renderDescription()}
+            <div id="nav-buttons">
+              <Link to="/">
+                <button class="ui button" role="button">
+                  Slick
+                </button>
+              </Link>
+              <Link to="/parallax">
+                <button class="ui button" role="button">
+                  Parallax
+                </button>
+              </Link>
+              <Link to="/chart">
+                <button class="ui button" role="button">
+                  Chart.js
+                </button>
+              </Link>
+              <Link to="/particles">
+                <button class="ui button" role="button">
+                  Particles
+                </button>
+              </Link>
+              <Link to="/testrun">
+                <button class="ui button" role="button">
+                  TestRun
+                </button>
+              </Link>
+            </div>
+            {this.renderDescription()}
+          </div>
+        )}
       </div>
     );
   }

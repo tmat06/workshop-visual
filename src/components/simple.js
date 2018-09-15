@@ -1,17 +1,35 @@
 import React from "react";
+import Slider from "react-slick";
 
-import Particles from "react-particles-js";
-
-export default class App extends React.Component {
+export default class SlickExample extends React.Component {
   render() {
     return (
-      <div>
-        <Particles
-          params={"Customization passed via props"}
-          width="100%"
-          height="100vh"
-        />
-      </div>
+      <Slider
+        {...{
+          fade: true,
+          dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }}
+      >
+        <div>
+          <h3>1</h3>
+        </div>
+        <div>
+          <h3>2</h3>
+        </div>
+        <div>
+          <h3>3</h3>
+        </div>
+        <div>
+          <h3>4</h3>
+        </div>
+        <div>
+          <h3>5</h3>
+        </div>
+      </Slider>
     );
   }
 }

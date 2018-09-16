@@ -7,64 +7,64 @@ export default class ParallaxExample extends Component {
       // Farthest 5
       <div
         style={{
-          height: "1500vh",
+          height: "300vh",
           width: "200%",
           overflow: "hidden",
           backgroundColor: "lightblue"
         }}
       >
         <Parallax
-          strength={800}
+          strength={750}
           bgImage="/Water-Wave-4.png"
           bgImageSizes="cover"
           bgStyle={{ backgroundPosition: "center top" }}
           bgWidth="100%"
-          bgHeight="1700vh"
+          bgHeight="1200vh"
           style={{
-            height: "1700vh",
+            height: "1200vh",
             width: "100%" //200%
           }}
         >
           {/* 4 */}
           <div
             style={{
-              height: "1700vh",
+              height: "300vh",
               width: "100%",
               overflow: "hidden"
             }}
           >
             <Parallax
-              strength={700}
+              strength={600}
               bgImage="/Water-Wave-4.png"
               bgWidth="100%" //500%
-              bgHeight="1700vh"
+              bgHeight="1000vh"
               style={{
-                height: "1700vh",
+                height: "1000vh",
                 width: "100%" //150
               }}
             >
               {/* 3 */}
               <div
                 style={{
-                  height: "1700vh",
+                  height: "300vh",
                   width: "100%",
                   overflow: "hidden"
                 }}
               >
                 <Parallax
-                  strength={450}
+                  strength={400}
                   bgImage="/Water-Wave-4.png"
                   bgWidth="200%" //200%
-                  bgHeight="1700vh"
+                  bgHeight="700vh"
                   style={{
-                    height: "1700vh",
+                    height: "700vh",
                     width: "100%" //200%
                   }}
                 >
                   {/* 2 */}
                   <div
                     style={{
-                      height: "400vh",
+                      height: "300vh",
                       width: "80%",
                       overflow: "hidden"
                     }}
@@ -82,7 +82,7 @@ export default class ParallaxExample extends Component {
                       {/* Closest 1 */}
                       <div
                         style={{
-                          height: "250vh",
+                          height: "300vh",
                           width: "100%",
                           overflow: "hidden"
                         }}

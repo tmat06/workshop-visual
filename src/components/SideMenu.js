@@ -16,6 +16,19 @@ class SideMenu extends React.Component {
                   https://github.com/akiran/react-slick
                 </a>
               </div>
+              <div>
+                <a
+                  href="
+                https://react-slick.neostack.com/
+                "
+                  target="_blank"
+                >
+                  https://react-slick.neostack.com/
+                </a>
+              </div>
+              <p style={{ fontStyle: "italic" }}>
+                npm install react-slick react-slick
+              </p>
               <p style={{ fontStyle: "italic" }}>
                 npm install react-slick slick-carousel
               </p>
@@ -185,7 +198,7 @@ class SideMenu extends React.Component {
             }}
           >
             <button
-              class="fluid ui button"
+              className="fluid ui button"
               role="button"
               onClick={() => toggleSlide()}
             >
@@ -193,27 +206,27 @@ class SideMenu extends React.Component {
             </button>
             <div id="nav-buttons">
               <Link to="/">
-                <button class="ui button" role="button">
+                <button className="ui button" role="button">
                   Slick
                 </button>
               </Link>
               <Link to="/parallax">
-                <button class="ui button" role="button">
+                <button className="ui button" role="button">
                   Parallax
                 </button>
               </Link>
               <Link to="/chart">
-                <button class="ui button" role="button">
+                <button className="ui button" role="button">
                   Chart.js
                 </button>
               </Link>
               <Link to="/particles">
-                <button class="ui button" role="button">
+                <button className="ui button" role="button">
                   Particles
                 </button>
               </Link>
               <Link to="/testrun">
-                <button class="ui button" role="button">
+                <button className="ui button" role="button">
                   TestRun
                 </button>
               </Link>

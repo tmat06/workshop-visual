@@ -1,0 +1,14 @@
+.slick-list {
+  outline: none !important;
+  border: none;
+}
+
+.slick-slide {
+  outline: none !important;
+  border: none;
+}
+
+.slick-slide:focus {
+  outline: none;
+  border: none;
+}

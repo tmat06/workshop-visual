@@ -88,6 +88,7 @@ export default class ParallaxExample extends Component {
                         }}
                       >
                         <Parallax
+                          blur={5}
                           strength={100}
                           bgImage="/Water-Wave-4.png"
                           bgWidth="100%" //200%

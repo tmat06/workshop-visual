@@ -16,10 +16,10 @@
 .login-box {
   display: flex;
   flex-direction: column;
+  font-family: "Roboto", sans-serif;
   height: 80vh;
   justify-content: space-around;
   width: 100%;
-  font-family: "Roboto", sans-serif;
 }
 
 #side-menu {
@@ -27,24 +27,25 @@
   box-shadow: -2px 0px 5px black;
   display: flex;
   flex-direction: column;
+  font-size: 20px;
   height: 100%;
   justify-content: flex-start;
   overflow: auto;
   position: fixed;
   right: 0;
-  width: 30%;
-  font-size: 20px;
+  /* best to keep at a static width? */
+  width: 500px;
 }
 
 #nav-buttons {
   border: 2px solid black;
   border-radius: 25px;
   /* box-shadow: 1px 1px 1px black; */
-  padding: 10px;
   margin: 20px;
+  padding: 10px;
 }
 
 .side-menu-description {
-  text-align: justify;
   padding: 0 20px;
+  text-align: justify;
 }

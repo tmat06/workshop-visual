@@ -1,6 +1,6 @@
 import React from "react";
 import Particles from "react-particles-js";
-import { Dropdown } from "semantic-ui-react";
+import { Dropdown, Radio } from "semantic-ui-react";
 
 export default class ParticlesJS extends React.Component {
   constructor() {
@@ -8,11 +8,14 @@ export default class ParticlesJS extends React.Component {
     this.state = {
       numberVal: 20,
       colorVal: "#333",
-      shapeVal: "circle"
+      shapeVal: "circle",
+      speedVal: 12,
+      directionVal: "none",
+      bounce: "out",
+      strokeWidthVal: 5
     };
   }
   handleParticles(particle, val) {
-    console.log(val);
     if (particle === "numberVal") {
       if (val > 50) {
         val = 50;
@@ -23,11 +26,17 @@ export default class ParticlesJS extends React.Component {
     this.setState({ [particle]: val });
   }
 
+  handleDrop(particle, { value }) {
+    this.setState({ [particle]: value });
+  }
+
+  handleBounce() {
+    this.state.bounce === "out"
+      ? this.setState({ bounce: "bounce" })
+      : this.setState({ bounce: "out" });
+  }
+
   render() {
-    const options = [
-      { key: "Circle", value: "circle", text: "Circle" },
-      { key: "Square", value: "square", text: "Square" }
-    ];
     return (
       <div
         style={{
@@ -47,27 +56,26 @@ export default class ParticlesJS extends React.Component {
                   value_area: 500
                 }
               },
+
               shape: {
                 type: this.state.shapeVal,
                 stroke: {
-                  width: 5,
-                  color: this.state.colorVal
+                  color: this.state.colorVal,
+                  width: this.state.strokeWidthVal
                 }
               },
               line_linked: {
                 shadow: {
                   enable: true,
-                  color: this.state.colorVal,
-                  blur: 5
+                  color: this.state.colorVal
                 }
               },
               move: {
+                direction: this.state.directionVal,
                 enable: true,
-                speed: 12,
-                direction: "none",
                 random: true,
-                straight: false,
-                bounce: true
+                speed: this.state.speedVal,
+                straight: false
               }
             }
           }}
@@ -84,6 +92,7 @@ export default class ParticlesJS extends React.Component {
             justifyContent: "space-around"
           }}
         >
+          {/* NUMBER */}
           <div
             style={{
               display: "flex",
@@ -94,15 +103,16 @@ export default class ParticlesJS extends React.Component {
           >
             <h3>Number</h3>
             <input
-              type="text"
-              className="form-control"
-              aria-label="Sizing example input"
               aria-describedby="inputGroup-sizing-default"
-              placeholder="20"
+              aria-label="Sizing example input"
+              className="form-control"
               onChange={e => this.handleParticles("numberVal", e.target.value)}
+              placeholder="20"
               type="number"
+              value={this.state.numberVal}
             />
           </div>
+          {/* SHAPE */}
           <div
             style={{
               display: "flex",
@@ -112,14 +122,23 @@ export default class ParticlesJS extends React.Component {
             }}
           >
             <h3>Shape</h3>
+
             <Dropdown
-              search
+              name="Shape"
+              onChange={(e, data) => this.handleDrop("shapeVal", data)}
+              options={[
+                { value: "circle", text: "circle" },
+                { value: "edge", text: "edge" },
+                { value: "polygon", text: "polygon" },
+                { value: "star", text: "star" },
+                { value: "triangle", text: "triangle" }
+              ]}
               selection
-              placeholder="Circle"
-              onChange={e => this.handleParticles("shapeVal", e.target)}
-              options={options}
+              text={this.state.shapeVal}
+              value={this.state.shapeVal}
             />
           </div>
+          {/* COLOR */}
           <div
             style={{
               display: "flex",
@@ -137,9 +156,10 @@ export default class ParticlesJS extends React.Component {
               aria-describedby="inputGroup-sizing-default"
               placeholder="#333"
               onChange={e => this.handleParticles("colorVal", e.target.value)}
-              type="string"
+              type="text"
             />
           </div>
+          {/* SPEED */}
           <div
             style={{
               display: "flex",
@@ -148,14 +168,64 @@ export default class ParticlesJS extends React.Component {
               alignItems: "center"
             }}
           >
-            <h3>Number</h3>
-            <div className="ui focus input">
-              <input
-                placeholder="20"
-                onChange={e => this.handleParticles("number", e.target.value)}
-                type="number"
-              />
-            </div>
+            <h3>Speed</h3>
+            <input
+              className="form-control"
+              onChange={e => this.handleParticles("speedVal", e.target.value)}
+              placeholder="12"
+              type="number"
+              value={this.state.speedVal}
+            />
+          </div>
+          {/* DIRECTION */}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "flex-start",
+              alignItems: "center"
+            }}
+          >
+            <h3>Direction</h3>
+
+            <Dropdown
+              name="Direction"
+              onChange={(e, data) => this.handleDrop("directionVal", data)}
+              options={[
+                { value: "top", text: "top" },
+                { value: "top-right", text: "top-right" },
+                { value: "right", text: "right" },
+                { value: "bottom-right", text: "bottom-right" },
+                { value: "bottom", text: "bottom" },
+                { value: "bottom-left", text: "bottom-left" },
+                { value: "left", text: "left" },
+                { value: "top-left", text: "top-left" },
+                { value: "none", text: "none" }
+              ]}
+              selection
+              text={this.state.directionVal}
+              value={this.state.directionVal}
+            />
+          </div>
+          {/* STROKE WIDTH */}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "flex-start",
+              alignItems: "center"
+            }}
+          >
+            <h3>Stroke Width</h3>
+            <input
+              className="form-control"
+              onChange={e =>
+                this.handleParticles("strokeWidthVal", e.target.value)
+              }
+              placeholder="5"
+              type="number"
+              value={this.state.strokeWidthVal}
+            />
           </div>
         </div>
       </div>

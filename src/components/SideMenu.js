@@ -128,7 +128,9 @@ class SideMenu extends React.Component {
                 </a>
               </div>
               <p style={{ fontStyle: "italic" }}>
-                npm install react-particles-js
+                npm install react-particles-js npm install
+                react-particle-animation npm install
+                https://github.com/transitive-bullshit/react-particle-animation
               </p>
             </h3>
             <p className="side-menu-description">

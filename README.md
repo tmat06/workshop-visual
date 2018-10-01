@@ -36,4 +36,4 @@ Currently there are 4 visual npm packages that will be introduced to the student
 
 - The objective is to encourage exploration and experimentation. By showing students small but simple examples of npm packages that can greatly enhance simple apps will lead students to place focus on improving their websites visually as well as help them realize the power that can come from finding useful npm packages.
 
-![visual walkthrough](public/visual-walkthrough.gif)
+![visual walkthrough](public/walkthrough.gif)

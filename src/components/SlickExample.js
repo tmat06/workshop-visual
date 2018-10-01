@@ -27,83 +27,95 @@ export default class SlickExample extends React.Component {
       className: "slick-center",
       centerMode: true,
       infinite: true,
-      centerPadding: "60px",
       slidesToShow: 1,
-      speed: 500
+      speed: 500,
+      height: "100%"
     };
     return (
-      <div style={{ width: "100%" }}>
+      <div
+        id="view-container"
+        style={{
+          width: "100%",
+          height: "100vh",
+          overflow: "hidden",
+          boxSizing: "border-box"
+        }}
+      >
         <Slider
           {...settings}
-          style={{ display: "flex", justifyContent: "center" }}
           asNavFor={this.state.nav2}
           ref={slider => (this.slider1 = slider)}
         >
           <div id="NeededToChangeTheNodesToCenterEachSelected">
             <div
+              id="cmon"
               style={{
                 width: "100%",
-                display: "flex",
-                justifyContent: "center",
+                height: "100%",
                 backgroundImage: "radial-gradient(#333, #22556E, lightblue)"
               }}
             >
-              <img src="dog.jpg" alt="dog" style={{ borderRadius: "500px" }} />
+              <img
+                src="dog2.jpg"
+                alt="dog"
+                style={{
+                  borderRadius: "800px",
+                  margin: "auto",
+                  height: "700px",
+                  width: "700px"
+                }}
+              />
             </div>
           </div>
           <div id="NeededToChangeTheNodesToCenterEachSelected">
             <div
               style={{
                 width: "100%",
+                height: "100%",
                 display: "flex",
                 justifyContent: "center",
                 backgroundImage: "radial-gradient(#333, #22556E, lightblue)"
               }}
             >
-              <img src="dog.jpg" alt="dog" style={{ borderRadius: "500px" }} />
+              <img
+                src="dog3.jpg"
+                alt="dog"
+                style={{
+                  borderRadius: "800px",
+                  margin: "auto",
+                  height: "700px",
+                  width: "700px"
+                }}
+              />
             </div>
           </div>
           <div id="NeededToChangeTheNodesToCenterEachSelected">
             <div
               style={{
                 width: "100%",
+                height: "100%",
                 display: "flex",
                 justifyContent: "center",
                 backgroundImage: "radial-gradient(#333, #22556E, lightblue)"
               }}
             >
-              <img src="dog.jpg" alt="dog" style={{ borderRadius: "500px" }} />
+              <img
+                src="dog4.gif"
+                alt="dog"
+                style={{
+                  borderRadius: "800px",
+                  margin: "auto",
+                  height: "700px",
+                  width: "700px"
+                }}
+              />
             </div>
           </div>
           <div id="NeededToChangeTheNodesToCenterEachSelected">
             <div
               style={{
                 width: "100%",
-                display: "flex",
-                justifyContent: "center",
-                backgroundImage: "radial-gradient(#333, #22556E, lightblue)"
-              }}
-            >
-              <img src="dog.jpg" alt="dog" style={{ borderRadius: "500px" }} />
-            </div>
-          </div>
-          <div id="NeededToChangeTheNodesToCenterEachSelected">
-            <div
-              style={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "center",
-                backgroundImage: "radial-gradient(#333, #22556E, lightblue)"
-              }}
-            >
-              <img src="dog.jpg" alt="dog" style={{ borderRadius: "500px" }} />
-            </div>
-          </div>
-          <div id="NeededToChangeTheNodesToCenterEachSelected">
-            <div
-              style={{
-                width: "100%",
-                height: "70vh",
+                height: "100%",
                 display: "flex",
                 justifyContent: "center",
                 backgroundImage: "radial-gradient(#333, #22556E, lightblue)"
@@ -112,7 +124,78 @@ export default class SlickExample extends React.Component {
               <img
                 src="dog.jpg"
                 alt="dog"
-                style={{ borderRadius: "500px", height: "" }}
+                style={{
+                  borderRadius: "800px",
+                  margin: "auto",
+                  height: "700px",
+                  width: "700px"
+                }}
+              />
+            </div>
+          </div>
+          <div id="NeededToChangeTheNodesToCenterEachSelected">
+            <div
+              style={{
+                width: "100%",
+                height: "100%",
+                display: "flex",
+                justifyContent: "center",
+                backgroundImage: "radial-gradient(#333, #22556E, lightblue)"
+              }}
+            >
+              <img
+                src="dog5.gif"
+                alt="dog"
+                style={{
+                  borderRadius: "800px",
+                  margin: "auto",
+                  height: "700px",
+                  width: "700px"
+                }}
+              />
+            </div>
+          </div>
+          <div id="NeededToChangeTheNodesToCenterEachSelected">
+            <div
+              style={{
+                width: "100%",
+                height: "100%",
+                display: "flex",
+                justifyContent: "center",
+                backgroundImage: "radial-gradient(#333, #22556E, lightblue)"
+              }}
+            >
+              <img
+                src="dog6.gif"
+                alt="dog"
+                style={{
+                  borderRadius: "800px",
+                  margin: "auto",
+                  height: "700px",
+                  width: "700px"
+                }}
+              />
+            </div>
+          </div>
+          <div id="NeededToChangeTheNodesToCenterEachSelected">
+            <div
+              style={{
+                width: "100%",
+                height: "100%",
+                display: "flex",
+                justifyContent: "center",
+                backgroundImage: "radial-gradient(#333, #22556E, lightblue)"
+              }}
+            >
+              <img
+                src="dog7.gif"
+                alt="dog"
+                style={{
+                  borderRadius: "800px",
+                  margin: "auto",
+                  height: "700px",
+                  width: "700px"
+                }}
               />
             </div>
           </div>
@@ -125,23 +208,103 @@ export default class SlickExample extends React.Component {
           swipeToSlide={true}
           focusOnSelect={true}
         >
-          <div>
-            <h3>1</h3>
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              backgroundImage: "radial-gradient(#333, #22556E, lightblue)"
+            }}
+          >
+            <img
+              src="dog2.jpg"
+              alt="dog"
+              style={{ borderRadius: "500px", width: "60%", margin: "auto" }}
+            />
           </div>
-          <div>
-            <h3>2</h3>
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              backgroundImage: "radial-gradient(#333, #22556E, lightblue)"
+            }}
+          >
+            <img
+              src="dog3.jpg"
+              alt="dog"
+              style={{ borderRadius: "500px", width: "60%", margin: "auto" }}
+            />
           </div>
-          <div>
-            <h3>3</h3>
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              backgroundImage: "radial-gradient(#333, #22556E, lightblue)"
+            }}
+          >
+            <img
+              src="dog4.gif"
+              alt="dog"
+              style={{ borderRadius: "500px", width: "60%", margin: "auto" }}
+            />
           </div>
-          <div>
-            <h3>4</h3>
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              backgroundImage: "radial-gradient(#333, #22556E, lightblue)"
+            }}
+          >
+            <img
+              src="dog.jpg"
+              alt="dog"
+              style={{ borderRadius: "500px", width: "60%", margin: "auto" }}
+            />
           </div>
-          <div>
-            <h3>5</h3>
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              backgroundImage: "radial-gradient(#333, #22556E, lightblue)"
+            }}
+          >
+            <img
+              src="dog5.gif"
+              alt="dog"
+              style={{ borderRadius: "500px", width: "60%", margin: "auto" }}
+            />
           </div>
-          <div>
-            <h3>6</h3>
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              backgroundImage: "radial-gradient(#333, #22556E, lightblue)"
+            }}
+          >
+            <img
+              src="dog6.gif"
+              alt="dog"
+              style={{ borderRadius: "500px", width: "60%", margin: "auto" }}
+            />
+          </div>
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              backgroundImage: "radial-gradient(#333, #22556E, lightblue)"
+            }}
+          >
+            <img
+              src="dog7.gif"
+              alt="dog"
+              style={{ borderRadius: "500px", width: "60%", margin: "auto" }}
+            />
           </div>
         </Slider>
       </div>

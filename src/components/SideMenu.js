@@ -28,18 +28,18 @@ class SideMenu extends React.Component {
               </div>
               <p style={{ fontStyle: "italic" }}>
                 npm install react-slick react-slick
-              </p>
-              <p style={{ fontStyle: "italic" }}>
+                <br />
                 npm install react-slick slick-carousel
               </p>
               <p style={{ fontStyle: "italic" }}>
                 @import "~slick-carousel/slick/slick-theme.css"
-              </p>
-              <p style={{ fontStyle: "italic" }}>
-                @import "~slick-carousel/slick/slick.css"
+                <br /> @import "~slick-carousel/slick/slick.css"
               </p>
             </h3>
-            <p className="side-menu-description">Slick YO</p>
+            <p className="side-menu-description">
+              Slick is a community-built carousel component designed
+              specifically for React.
+            </p>
 
             <img src="/slick-simple-example.PNG" style={{ width: "100%" }} />
           </div>
@@ -92,8 +92,11 @@ class SideMenu extends React.Component {
                   https://www.npmjs.com/package/react-chartjs-2
                 </a>
               </div>
-              <p style={{ fontStyle: "italic" }}>npm install chart.js</p>
-              <p style={{ fontStyle: "italic" }}>npm install react-chartjs-2</p>
+              <p style={{ fontStyle: "italic" }}>
+                npm install chart.js
+                <br />
+                npm install react-chartjs-2
+              </p>
             </h3>
             <p className="side-menu-description">
               Chart.js is a community maintained project where one can visualize
@@ -128,9 +131,8 @@ class SideMenu extends React.Component {
                 </a>
               </div>
               <p style={{ fontStyle: "italic" }}>
-                npm install react-particles-js npm install
-                react-particle-animation npm install
-                https://github.com/transitive-bullshit/react-particle-animation
+                npm install react-particles-js <br /> npm install
+                react-particle-animation <br />
               </p>
             </h3>
             <p className="side-menu-description">

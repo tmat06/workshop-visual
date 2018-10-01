@@ -1,6 +1,6 @@
 import React from "react";
 import Particles from "react-particles-js";
-import { Dropdown, Radio } from "semantic-ui-react";
+import { Dropdown } from "semantic-ui-react";
 
 export default class ParticlesJS extends React.Component {
   constructor() {

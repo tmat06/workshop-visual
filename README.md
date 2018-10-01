@@ -1,7 +1,6 @@
 ## Author(s)
 
 - Timmy (T-Bone) Matthews
-- Mira Jones
 - Courtenay Eccles
 
 ## Last Outline Update:

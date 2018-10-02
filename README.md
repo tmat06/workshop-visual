@@ -5,7 +5,7 @@
 
 ## Last Outline Update:
 
-09/06/18
+10/01/18
 
 ## Objective for Workshop
 

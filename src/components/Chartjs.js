@@ -609,36 +609,36 @@ export default class ChartJS extends Component {
             width: "100%"
           }}
         >
-          <div>
+          <div style={{ width: "100%", margin: "0 5px" }}>
             <button
-              className="ui button"
+              className="fluid ui button"
               role="button"
               onClick={() => this.graphSelection("doughnut")}
             >
               Doughnut/Pie
             </button>
           </div>
-          <div>
+          <div style={{ width: "100%", margin: "0 5px" }}>
             <button
-              className="ui button"
+              className="fluid ui button"
               role="button"
               onClick={() => this.graphSelection("bar")}
             >
               Bar
             </button>
           </div>
-          <div>
+          <div style={{ width: "100%", margin: "0 5px" }}>
             <button
-              className="ui button"
+              className="fluid ui button"
               role="button"
               onClick={() => this.graphSelection("line")}
             >
               Line
             </button>
           </div>
-          <div>
+          <div style={{ width: "100%", margin: "0 5px" }}>
             <button
-              className="ui button"
+              className="fluid ui button"
               role="button"
               onClick={() => this.graphSelection("bubble")}
             >

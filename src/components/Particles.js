@@ -1,6 +1,6 @@
 import React from "react";
 import Particles from "react-particles-js";
-import { Dropdown } from "semantic-ui-react";
+import { Input, Dropdown } from "semantic-ui-react";
 
 export default class ParticlesJS extends React.Component {
   constructor() {
@@ -102,13 +102,10 @@ export default class ParticlesJS extends React.Component {
             }}
           >
             <h3>Number</h3>
-            <input
-              aria-describedby="inputGroup-sizing-default"
-              aria-label="Sizing example input"
-              className="form-control"
-              onChange={e => this.handleParticles("numberVal", e.target.value)}
+            <Input
               placeholder="20"
               type="number"
+              onChange={e => this.handleParticles("numberVal", e.target.value)}
               value={this.state.numberVal}
             />
           </div>
@@ -149,14 +146,10 @@ export default class ParticlesJS extends React.Component {
           >
             <h3>Color</h3>
 
-            <input
-              type="text"
-              className="form-control"
-              aria-label="Sizing example input"
-              aria-describedby="inputGroup-sizing-default"
+            <Input
               placeholder="#333"
-              onChange={e => this.handleParticles("colorVal", e.target.value)}
               type="text"
+              onChange={e => this.handleParticles("colorVal", e.target.value)}
             />
           </div>
           {/* SPEED */}
@@ -169,11 +162,11 @@ export default class ParticlesJS extends React.Component {
             }}
           >
             <h3>Speed</h3>
-            <input
-              className="form-control"
-              onChange={e => this.handleParticles("speedVal", e.target.value)}
+
+            <Input
               placeholder="12"
               type="number"
+              onChange={e => this.handleParticles("speedVal", e.target.value)}
               value={this.state.speedVal}
             />
           </div>
@@ -217,13 +210,13 @@ export default class ParticlesJS extends React.Component {
             }}
           >
             <h3>Stroke Width</h3>
-            <input
-              className="form-control"
+
+            <Input
+              placeholder="5"
+              type="number"
               onChange={e =>
                 this.handleParticles("strokeWidthVal", e.target.value)
               }
-              placeholder="5"
-              type="number"
               value={this.state.strokeWidthVal}
             />
           </div>

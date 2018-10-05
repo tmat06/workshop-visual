@@ -62,8 +62,8 @@ export default class SlickExample extends React.Component {
                 style={{
                   borderRadius: "800px",
                   margin: "auto",
-                  height: "700px",
-                  width: "700px"
+                  height: "500px",
+                  width: "500px"
                 }}
               />
             </div>
@@ -84,8 +84,8 @@ export default class SlickExample extends React.Component {
                 style={{
                   borderRadius: "800px",
                   margin: "auto",
-                  height: "700px",
-                  width: "700px"
+                  height: "500px",
+                  width: "500px"
                 }}
               />
             </div>
@@ -106,8 +106,8 @@ export default class SlickExample extends React.Component {
                 style={{
                   borderRadius: "800px",
                   margin: "auto",
-                  height: "700px",
-                  width: "700px"
+                  height: "500px",
+                  width: "500px"
                 }}
               />
             </div>
@@ -128,8 +128,8 @@ export default class SlickExample extends React.Component {
                 style={{
                   borderRadius: "800px",
                   margin: "auto",
-                  height: "700px",
-                  width: "700px"
+                  height: "500px",
+                  width: "500px"
                 }}
               />
             </div>
@@ -150,8 +150,8 @@ export default class SlickExample extends React.Component {
                 style={{
                   borderRadius: "800px",
                   margin: "auto",
-                  height: "700px",
-                  width: "700px"
+                  height: "500px",
+                  width: "500px"
                 }}
               />
             </div>
@@ -172,8 +172,8 @@ export default class SlickExample extends React.Component {
                 style={{
                   borderRadius: "800px",
                   margin: "auto",
-                  height: "700px",
-                  width: "700px"
+                  height: "500px",
+                  width: "500px"
                 }}
               />
             </div>

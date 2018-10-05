@@ -48,27 +48,6 @@ export default class SlickExample extends React.Component {
         >
           <div id="NeededToChangeTheNodesToCenterEachSelected">
             <div
-              id="cmon"
-              style={{
-                width: "100%",
-                height: "100%",
-                backgroundImage: "radial-gradient(#333, #22556E, lightblue)"
-              }}
-            >
-              <img
-                src="dog2.jpg"
-                alt="dog"
-                style={{
-                  borderRadius: "800px",
-                  margin: "auto",
-                  height: "700px",
-                  width: "700px"
-                }}
-              />
-            </div>
-          </div>
-          <div id="NeededToChangeTheNodesToCenterEachSelected">
-            <div
               style={{
                 width: "100%",
                 height: "100%",
@@ -208,20 +187,6 @@ export default class SlickExample extends React.Component {
           swipeToSlide={true}
           focusOnSelect={true}
         >
-          <div
-            style={{
-              width: "100%",
-              display: "flex",
-              justifyContent: "center",
-              backgroundImage: "radial-gradient(#333, #22556E, lightblue)"
-            }}
-          >
-            <img
-              src="dog2.jpg"
-              alt="dog"
-              style={{ borderRadius: "500px", width: "60%", margin: "auto" }}
-            />
-          </div>
           <div
             style={{
               width: "100%",

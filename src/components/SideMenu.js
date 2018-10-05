@@ -149,12 +149,15 @@ class SideMenu extends React.Component {
       default:
         return (
           <div>
-            <h1>Bootstrap</h1>
-            <h3>import 'bootstrap/dist/css/bootstrap.min.css'</h3>
-            <h1>Material UI</h1>
-            <h3>import Button from '@material-ui/core/Button'</h3>
-            <h1>Semantic</h1>
-            <h3>import 'semantic-ui-css/semantic.min.css'</h3>
+            <h1>Slick</h1>
+            <h3>
+              import Slider from 'react-slick'
+              <br />
+              import '~slick-carousel/slick/slick.css'
+              <br />
+              import '~slick-carousel/slick/slick-theme.css'
+            </h3>
+
             <h1>Parallax</h1>
             <h3>
               import {"{"}

@@ -1,0 +1,7 @@
+1. Create a new component in component Folder with a name that indicates the feature.
+
+2. Once you've created the component and all of it's features, import and add a route in the routes.js for your feature.
+
+3. Go into the SideMenu.js and in the renderDescription function, create a case for the route pathname you created for your component.
+
+4. Everything placed in that case will render when the user is navigated to that pathname.

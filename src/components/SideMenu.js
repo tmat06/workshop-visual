@@ -5,6 +5,7 @@ import "semantic-ui-css/semantic.min.css";
 
 class SideMenu extends React.Component {
   renderDescription() {
+    // renders based on the pathname, everything that you'd like to display in the side menu needs to be defined here.
     switch (this.props.location.pathname) {
       case "/":
         return (
@@ -179,6 +180,7 @@ class SideMenu extends React.Component {
   render() {
     const { mot, toggleSlide } = this.props;
     return (
+      // React-Motion used to slide menu in and out.
       <div
         id="side-menu"
         style={{

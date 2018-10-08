@@ -427,7 +427,7 @@ export default class ChartJS extends Component {
             </div>
           </div>
         );
-      case "bubble":
+      default:
         return (
           <div
             style={{

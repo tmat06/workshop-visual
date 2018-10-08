@@ -13,7 +13,11 @@ class SideMenu extends React.Component {
             <h1>Slick</h1>
             <h3>
               <div>
-                <a href="https://github.com/akiran/react-slick" target="_blank">
+                <a
+                  href="https://github.com/akiran/react-slick"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   https://github.com/akiran/react-slick
                 </a>
               </div>
@@ -23,6 +27,7 @@ class SideMenu extends React.Component {
                 https://react-slick.neostack.com/
                 "
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   https://react-slick.neostack.com/
                 </a>
@@ -54,6 +59,7 @@ class SideMenu extends React.Component {
                 <a
                   href="https://www.npmjs.com/package/react-parallax"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   https://www.npmjs.com/package/react-parallax
                 </a>
@@ -81,7 +87,11 @@ class SideMenu extends React.Component {
             <h1>Chart.js</h1>
             <h3>
               <div>
-                <a href="http://www.chartjs.org/docs/latest/" target="_blank">
+                <a
+                  href="http://www.chartjs.org/docs/latest/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   http://www.chartjs.org/docs/latest/
                 </a>
               </div>
@@ -89,6 +99,7 @@ class SideMenu extends React.Component {
                 <a
                   href="https://www.npmjs.com/package/react-chartjs-2"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   https://www.npmjs.com/package/react-chartjs-2
                 </a>
@@ -127,6 +138,7 @@ class SideMenu extends React.Component {
                 <a
                   href="https://www.npmjs.com/package/react-particles-js"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   https://www.npmjs.com/package/react-particles-js
                 </a>

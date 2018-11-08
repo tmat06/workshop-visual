@@ -3,6 +3,10 @@ import "./App.css";
 import routes from "./routes";
 import SideMenu from "./components/SideMenu";
 import { Motion, spring } from "react-motion";
+// import ReallySmoothScroll from "really-smooth-scroll";
+
+// Doesn't work on Parallax?
+// ReallySmoothScroll.shim();
 
 export default class App extends Component {
   constructor() {

@@ -7,6 +7,10 @@
 
 10/01/18
 
+## Repo for Project
+
+[https://github.com/tmat06/workshop-visual](https://github.com/tmat06/workshop-visual)
+
 ## Objective for Workshop
 
 - To introduce students to a variety of visually appealing npm packages.

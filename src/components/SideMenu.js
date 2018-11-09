@@ -33,9 +33,9 @@ class SideMenu extends React.Component {
                 </a>
               </div>
               <p style={{ fontStyle: "italic" }}>
-                npm install react-slick react-slick
+                npm install react-slick
                 <br />
-                npm install react-slick slick-carousel
+                npm install slick-carousel
               </p>
               <p style={{ fontStyle: "italic" }}>
                 @import "~slick-carousel/slick/slick-theme.css"
